@@ -231,14 +231,14 @@
             }).join('');
         }
 
-        // 二进制转 i/I 编码
+        // 二进制转 o/O 编码
         function binaryToiI(binary) {
-            return binary.split('').map(bit => bit === '0' ? 'i' : 'I').join('');
+            return binary.split('').map(bit => bit === '0' ? 'o' : 'O').join('');
         }
 
-        // i/I 编码转二进制
+        // o/O 编码转二进制
         function iIToBinary(iIString) {
-            return iIString.split('').map(char => char === 'i' ? '0' : '1').join('');
+            return iIString.split('').map(char => char === 'o' ? '0' : '1').join('');
         }
 
         // 数字转二进制（固定长度）
